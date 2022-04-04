@@ -74,6 +74,7 @@ input:focus{
   text-transform: uppercase;
   cursor: pointer;
   transition: all 0.2s;
+  color: #000;
 }
 .signin{
   margin-left: 54px;
@@ -87,4 +88,30 @@ input:focus{
 .login:hover, .signin:hover{
   color:#E70C2F;
 }
+@media (max-width: 1200px){
+  .submenu {
+    font-size: 14px;
+    font-weight: 400;
+    margin: 10px;
+  }
+  .signin {
+    margin-left: 0;
+    font-size: 14px;
+    font-weight: 600;
+  }
+  .login {
+    font-size: 14px;
+    font-weight: 600;
+    margin-left: -70px;
+  }
+  .navbar-list {
+    margin-left: 70px;
+  }
 
+}
+
+.profileBtn{
+  font-size: 19px;
+  font-weight: 400;
+  color:#000
+}

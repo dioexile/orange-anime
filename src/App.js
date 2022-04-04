@@ -1,11 +1,10 @@
-import React, {useState} from 'react';
+import React from 'react';
 import './styles/style.css';
 import Header from './Components/Header';
 import {
   BrowserRouter as Router,
   Switch,
   Route,
-  Link,
   Redirect,
   BrowserRouter,
 } from "react-router-dom";
@@ -15,6 +14,8 @@ import Marks from './pages/Marks'
 import About from './pages/About'
 import Home from './pages/Home'
 import Details from './pages/Details';
+import Profile from './pages/Profile';
+
 
 function App() {
   return (
@@ -39,6 +40,10 @@ function App() {
               <Contacts/>
             </Route>
             <Route path="/anime/:id" component={Details}/>
+            {/* <Route path="/user/:id" component={Profile}/> */}
+            <Route path='/profile'>
+              <Profile/>
+            </Route>
             <Redirect to='/home'/>
           </Switch>
         </BrowserRouter>

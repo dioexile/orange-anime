@@ -1,9 +1,9 @@
-import React, {useState} from 'react';
+import React from 'react';
 import '../styles/header.css';
 import {Link} from "react-router-dom";
 import logoImg from '../images/1.png';
 
-const Navbar = (props) => {
+const Navbar = () => {
   return(
     <div className='navbar'>
       <Link to="home"><div className="navbar-logo"><img src={logoImg} alt="logo"/></div></Link>

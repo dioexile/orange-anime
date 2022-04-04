@@ -15,6 +15,7 @@ const Main = () => {
           <h2 className="main-section__title">Аниме сериалы</h2>
           <MainItem/>
         </section>
+        <input type="text" />
         <section className="main-section">
           <h2 className="main-section__title">Аниме фильмы</h2>
         </section>
