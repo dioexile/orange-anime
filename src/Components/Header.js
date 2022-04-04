@@ -11,15 +11,6 @@ const Header = (props) => {
     <header>
       <nav className="navbar">
         <Navbar/>
-        <div className="navbar-search">
-          <input 
-            type="text" 
-            placeholder ='Поиск' 
-            className='navbar-search__input'
-            onChange={(e) => console.log(e.target.value)}
-            />
-        </div>
-        
         <div className="signin" onClick={() => setModal1(true)}>вход</div>
         <div className="login" onClick={() => setModal(true)}>регистрация</div>
       </nav>

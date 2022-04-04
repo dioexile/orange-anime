@@ -1,0 +1,17 @@
+.anime-page{
+  margin-top: 100px;
+  background: #fff;
+}
+.anime-page__head{
+  display: flex;
+  padding: 50px;
+}
+.anime-page__title{
+  width: 100%;
+  font-size: 24px;
+  text-align:center;
+}
+.anime-page__img img{
+  width: 300px;
+  height: 400px;
+}

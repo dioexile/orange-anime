@@ -7,7 +7,7 @@ const dbanime = {
       id:1
     },
     {
-      name: 'Мастера Меча Онлайн II',
+      name: 'йцу',
       img: '/img/sao2.jpg',
       rating: 1000,
       id:2
@@ -25,7 +25,7 @@ const dbanime = {
       id:4
     },
     {
-      name: 'Мастера Меча Онлайн: Алисизация — Война в Подмирье 2',
+      name: 'йцу',
       img: '/img/sao5.jpg',
       rating: 5,
       id:5

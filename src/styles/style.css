@@ -1,0 +1,27 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  background:url(../images/2.jpg);
+  background-repeat: none;
+  background-size: 100%;
+  background-attachment:fixed;
+  font-family: 'Manrope', sans-serif;
+}
+header{
+  background: #fff;
+}
+a{
+  text-decoration: none;
+  cursor: pointer;
+}
+.container{
+  max-width: 1444px;
+  margin:0 auto;
+}
+li{
+  list-style: none;
+}

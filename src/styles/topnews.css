@@ -1,0 +1,30 @@
+*{
+  font-family: 'Manrope', sans-serif;
+}
+.topnews{
+  padding: 50px 20px 50px 20px;
+  display: flex;
+  justify-content: space-between;
+  background-color: #E70C2F;
+}
+.topnews-item{
+  text-align: center;
+}
+.topnews-item__photo img{
+  max-width: 90%;
+}
+.topnews-item__title{
+  text-align: center;
+  font-size: 22px;
+  color:#fff;
+  margin-top: 15px;
+}
+.topnews-first{
+  display: flex;
+  justify-content: space-between;
+}
+.topnews-second{
+  display: none;
+  justify-content: space-between;
+
+}

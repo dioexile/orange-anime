@@ -14,8 +14,9 @@ import Genres from './pages/Genres'
 import Marks from './pages/Marks'
 import About from './pages/About'
 import Home from './pages/Home'
-function App() {
+import Details from './pages/Details';
 
+function App() {
   return (
     <> 
       <div className='container'>
@@ -37,6 +38,7 @@ function App() {
             <Route path='/contacts'>
               <Contacts/>
             </Route>
+            <Route path="/anime/:id" component={Details}/>
             <Redirect to='/home'/>
           </Switch>
         </BrowserRouter>

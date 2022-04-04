@@ -1,5 +1,4 @@
-import React, {useState} from "react";
-import dbanime from './DBanime';
+import React from "react";
 import MainItem from './MainItem';
 
 const Main = () => {
