@@ -21,6 +21,11 @@ const Details = ({match}) => {
           <p>rating: {animeInfo.rating}</p>
         </div>
       </div>
+      <div className="anime-page__video">
+        <div className="player">
+          <iframe src={animeInfo.video} frameborder="0" width="740" height="440"scrolling="no" allowfullscreen></iframe>
+        </div>
+      </div>
     </div>
   )
 }
