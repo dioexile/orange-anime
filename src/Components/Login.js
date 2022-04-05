@@ -1,12 +1,12 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import cl from '../styles/login.module.css'
-import { createUserWithEmailAndPassword,signInWithEmailAndPassword } from "firebase/auth";
+import { createUserWithEmailAndPassword,signInWithEmailAndPassword, updateProfile } from "firebase/auth";
 import { useAuth } from "../AuthProviders/useAuth";
 
 const Login = ({visible, setVisible}) => {
   const [userData, setUserData] = useState({email: '', password: '', login: ''})
   const [isReg, setIsReg] = useState(false)
-  const {ga, user} = useAuth()
+  const {ga} = useAuth()
   const rootClasses = [cl.overlay]
   if (visible){
     rootClasses.push(cl.active);
@@ -15,7 +15,10 @@ const Login = ({visible, setVisible}) => {
   const handleLogin = async (e) => {
     e.preventDefault()
     if(isReg){
-      await createUserWithEmailAndPassword(ga, userData.email, userData.password)
+      const res = await createUserWithEmailAndPassword(ga, userData.email, userData.password)
+      await updateProfile(res.user, {
+        displayName: userData.login
+      })
       await signInWithEmailAndPassword(ga, userData.email, userData.password)
 
     }
@@ -33,7 +36,7 @@ const Login = ({visible, setVisible}) => {
         <form method="post" onSubmit={handleLogin}>
           <div className={cl.formInput}>
             <label>ЛОГИН</label>
-            <input placeholder='ЛОГИН' value={userData.login} type='name' className={cl.modalInput} onChange={e => setUserData({...userData, login: e.target.value})}/>
+            <input placeholder='ЛОГИН' value={userData.login} className={cl.modalInput} onChange={e => setUserData({...userData, login: e.target.value})}/>
             <label>EMAIL</label>
             <input placeholder='EMAIL' value={userData.email} type='email' name='email'  className={cl.modalInput} onChange={e => setUserData({...userData, email: e.target.value})}/>
             <label>ПАРОЛЬ</label>

@@ -15,10 +15,13 @@ export const AuthProvider = ({children}) => {
         setUser(
           {
             _id: authUser.uid,
-            name: authUser.displayName,
+            email: authUser.email,
+            login: authUser.displayName
           }
       )
-      else setUser(null)
+      else {
+        setUser(null)
+      }
     })
     return () => {
       unListen()

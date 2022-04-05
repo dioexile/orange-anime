@@ -1,3 +1,18 @@
 .profile{
+  margin-top: 100px;
   background: #fff;
+  padding: 100px;
+}
+.logoutButton{
+  background: #E70C2F;
+  color: #fff;
+  padding: 10px;
+  outline: none;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+}
+.user-about{
+  display:flex;
+  justify-content: space-between;
 }

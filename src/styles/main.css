@@ -11,12 +11,16 @@ input {outline:2px solid black;}
 }
 .main{
   margin-top: 50px;
+  margin-bottom: 100px;
 }
 .main-list{
   padding: 50px 20px 50px 20px;
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
+}
+.main-section:not(:first-child){
+  padding-bottom: 100px;
 }
 .main-header{
   color: #fff;
@@ -44,7 +48,7 @@ input {outline:2px solid black;}
 .main-item{
   text-align: center;
   margin:30px 0;
-  width: 26%;
+  width: 23%;
   transition: all 0.2s;
 }
 .main-item__photo img{
